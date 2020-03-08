@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ut0-tf-iFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ut0-tf-iFN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -512,7 +512,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zof-75-HbH">
-                                <rect key="frame" x="30" y="367" width="159" height="90"/>
+                                <rect key="frame" x="30" y="367" width="165" height="90"/>
                                 <color key="backgroundColor" red="0.9134544403" green="0.9134544403" blue="0.9134544403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="K3g-Hp-nJf"/>
@@ -522,9 +522,12 @@
                                 <state key="normal" title="AI architect">
                                     <color key="titleColor" red="0.13746219870000001" green="0.18815928700000001" blue="0.2196114659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dj0-TB-bld" kind="presentation" modalPresentationStyle="fullScreen" id="H8J-En-n8T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JLV-03-pfe">
-                                <rect key="frame" x="219" y="367" width="165" height="90"/>
+                                <rect key="frame" x="225" y="367" width="159" height="90"/>
                                 <color key="backgroundColor" red="0.9134544403" green="0.9134544403" blue="0.9134544403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="VuG-rN-G2W"/>
@@ -684,6 +687,115 @@ security</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyC-w1-4BK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2229" y="1797"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OuH-hb-vCB">
+            <objects>
+                <viewController id="DHV-XN-TPM" customClass="AIViewController" customModule="hercard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PqQ-yV-0SY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="CARDS" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="S99-Zg-qFW">
+                                <rect key="frame" x="20" y="143" width="117" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="KxU-Gp-U53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzQ-AN-acq">
+                                <rect key="frame" x="13" y="429" width="390" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.71764705880000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Swap Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="swap_card1:" destination="DHV-XN-TPM" eventType="touchUpInside" id="FLo-Gw-phc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ab-yt-s1f">
+                                <rect key="frame" x="13" y="714" width="390" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.71764705880000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Swap Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="swap_card2:" destination="DHV-XN-TPM" eventType="touchUpInside" id="z90-5L-Blk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="8Yn-KB-xNr">
+                                <rect key="frame" x="20" y="233" width="374" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="m" translatesAutoresizingMaskIntoConstraints="NO" id="tX7-ju-mCZ">
+                                        <rect key="frame" x="-8" y="-9" width="391" height="190"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="tX7-ju-mCZ" firstAttribute="leading" secondItem="8Yn-KB-xNr" secondAttribute="leading" constant="-8" id="UXY-1J-DPR"/>
+                                    <constraint firstItem="tX7-ju-mCZ" firstAttribute="centerX" secondItem="8Yn-KB-xNr" secondAttribute="centerX" id="Ybz-vt-lwh"/>
+                                    <constraint firstItem="tX7-ju-mCZ" firstAttribute="top" secondItem="8Yn-KB-xNr" secondAttribute="top" constant="-9" id="aie-NL-NFG"/>
+                                    <constraint firstAttribute="bottom" secondItem="tX7-ju-mCZ" secondAttribute="bottom" constant="-11" id="mG9-Vd-blT"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="itv-wz-G4h"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="3yA-Sq-FkR" userLabel="Ui View card2">
+                                <rect key="frame" x="21" y="518" width="374" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="il_fullxfull.1954598379_5ixg-1" translatesAutoresizingMaskIntoConstraints="NO" id="trq-WM-0SH">
+                                        <rect key="frame" x="-8" y="-9" width="391" height="190"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="trq-WM-0SH" firstAttribute="centerX" secondItem="3yA-Sq-FkR" secondAttribute="centerX" id="DKM-yo-3HI"/>
+                                    <constraint firstItem="trq-WM-0SH" firstAttribute="leading" secondItem="3yA-Sq-FkR" secondAttribute="leading" constant="-8" id="MkV-Ow-n9V"/>
+                                    <constraint firstItem="trq-WM-0SH" firstAttribute="top" secondItem="3yA-Sq-FkR" secondAttribute="top" constant="-9" id="Nv0-Qn-Pqn"/>
+                                    <constraint firstAttribute="bottom" secondItem="trq-WM-0SH" secondAttribute="bottom" constant="-11" id="XiK-pu-d52"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Taz-Zl-FCV"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S99-Zg-qFW" firstAttribute="top" secondItem="dB9-Sw-Vqb" secondAttribute="top" constant="55" id="8SI-cc-G6z"/>
+                            <constraint firstItem="S99-Zg-qFW" firstAttribute="leading" secondItem="dB9-Sw-Vqb" secondAttribute="leading" constant="20" id="pq0-7i-fza"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dB9-Sw-Vqb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zvE-2i-bPF"/>
+                    <connections>
+                        <outlet property="imageView_card1" destination="tX7-ju-mCZ" id="0Dz-W6-phP"/>
+                        <outlet property="imageView_card2" destination="trq-WM-0SH" id="uiz-GV-f9l"/>
+                        <outlet property="uiView_card1" destination="8Yn-KB-xNr" id="aKS-PA-EoE"/>
+                        <outlet property="uiView_card2" destination="3yA-Sq-FkR" id="kdC-Wr-Dql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60v-fh-tPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4018.8405797101454" y="837.72321428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="otA-J7-NuF">
+            <objects>
+                <navigationController id="dj0-TB-bld" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QgB-xO-KXH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DHV-XN-TPM" kind="relationship" relationship="rootViewController" id="79E-9p-Od8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOJ-Fz-mnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3094" y="839"/>
         </scene>
     </scenes>
     <resources>
