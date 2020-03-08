@@ -11,8 +11,9 @@ import UIKit
 class ProfileController: UIViewController {
     
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var company: UILabel!
-    @IBOutlet var position: UILabel!
+    
+    @IBOutlet weak var company: UILabel!
+    @IBOutlet weak var position: UILabel!
     @IBOutlet var phone: UILabel!
     @IBOutlet var email: UILabel!
     @IBOutlet var uiView_card: UIView!
