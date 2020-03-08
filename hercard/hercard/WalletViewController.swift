@@ -35,38 +35,41 @@ class WalletViewController: UIViewController {
             
             
             if (UserDefaults.standard.object(forKey: "card1") != nil) {
-//                // --- load the cards
-//                // programatically create a view
-//                let swapedCard1=UIView(frame: CGRect(x: 40, y: 100, width: 391, height: 190))
-//                swapedCard1.backgroundColor=UIColor.red
-//                swapedCard1.layer.cornerRadius=25
+                // --- load the cards
+                // programatically create a view
+                let uiView_card1=UIView(frame: CGRect(x: 18, y: 193, width: 374, height: 170))
+                let swapedCard1=UIImageView(frame: CGRect(x:-8, y: -9, width: 391, height: 190))
+                swapedCard1.image = UIImage(named: "m")
+                swapedCard1.styleCards(containerView: uiView_card1, cornerRadius: 25)
                 
-                
-                // Add UIView as a Subview
-//                self.view.addSubview(swapedCard1)
-//
+                 // Add UIView as a Subview
+                uiView_card1.addSubview(swapedCard1)
+                self.view.addSubview(uiView_card1)
+
                 // add label
                 var card1Info: [String:String] = UserDefaults.standard.object(forKey: "card1") as? [String:String] ?? [:]
-                let name1 = UILabel(frame: CGRect(x: 30, y: 20, width: 300, height: 200))
-                let company1 = UILabel(frame: CGRect(x: 30, y: 40, width: 300, height: 200))
-                let position1 = UILabel(frame: CGRect(x: 30, y: 60, width: 300, height: 200))
-                let phone1 = UILabel(frame: CGRect(x: 30, y: 80, width: 300, height: 200))
-                let email1 = UILabel(frame: CGRect(x: 30, y: 100, width: 300, height: 200))
+                let name1 = UILabel(frame: CGRect(x: 113, y: 16, width: 149, height: 40))
+                let company1 = UILabel(frame: CGRect(x: -8, y: 78, width: 183, height: 17))
+                let position1 = UILabel(frame: CGRect(x: 214, y: 78, width: 169, height: 17))
+                let phone1 = UILabel(frame: CGRect(x: -8, y: 117, width: 183, height: 17))
+                let email1 = UILabel(frame: CGRect(x: 214, y: 114, width: 182, height: 17))
                 name1.textAlignment = NSTextAlignment.center
                 company1.textAlignment = NSTextAlignment.center
                 position1.textAlignment = NSTextAlignment.center
                 phone1.textAlignment = NSTextAlignment.center
                 email1.textAlignment = NSTextAlignment.center
-                self.view.addSubview(name1)
-                self.view.addSubview(company1)
-                self.view.addSubview(position1)
-                self.view.addSubview(phone1)
-                self.view.addSubview(email1)
                 name1.text = card1Info["name1"]
+                name1.font = UIFont(name: "Snell Roundhand",
+                size: 31.0)
                 company1.text = card1Info["company1"]
                 position1.text = card1Info["position1"]
                 phone1.text = card1Info["phone1"]
                 email1.text = card1Info["email1"]
+                uiView_card1.addSubview(name1)
+                uiView_card1.addSubview(company1)
+                uiView_card1.addSubview(position1)
+                uiView_card1.addSubview(phone1)
+                uiView_card1.addSubview(email1)
                 
                 
                 
