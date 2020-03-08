@@ -10,14 +10,14 @@ import UIKit
 
 class ProfileController: UIViewController {
 
-    @IBOutlet var nameLabel: UILabel!
     
-    var finalName = ""
+    @IBOutlet var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = finalName
+        UserDefaults.standard.synchronize()
+        nameLabel.text = UserDefaults.standard.string(forKey: "Name")
 
         // Do any additional setup after loading the view.
     }
