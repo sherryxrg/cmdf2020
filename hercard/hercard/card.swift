@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Card: UIViewController {
+class Card: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var name: UITextField!
     @IBOutlet var company: UITextField!
@@ -35,8 +35,25 @@ class Card: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.delegate = self
         
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        name.resignFirstResponder()
+    }
+    
+//    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer){
+//        name.resignFirstResponder()
+//        company.resignFirstResponder()
+//        position.resignFirstResponder()
+//        phone.resignFirstResponder()
+//        email.resignFirstResponder()
+//
+//        }
+//
     
 }
