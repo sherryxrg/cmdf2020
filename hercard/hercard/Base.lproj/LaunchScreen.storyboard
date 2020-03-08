@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,31 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-9n-PWA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3bcd749992ee7f225f2ea5f913b586a8" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-9n-PWA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000023"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HER *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boa-fE-i6J">
-                                <rect key="frame" x="50" y="144" width="314" height="77"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="64"/>
+                                <rect key="frame" x="50" y="194" width="314" height="77"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-E9-V4F">
-                                <rect key="frame" x="50" y="221" width="314" height="77"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="64"/>
+                                <rect key="frame" x="50" y="252" width="314" height="77"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="64"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Boa-fE-i6J" secondAttribute="trailing" constant="50" id="aPL-Zg-m7F"/>
-                            <constraint firstItem="Sua-E9-V4F" firstAttribute="top" secondItem="Boa-fE-i6J" secondAttribute="bottom" id="llG-yS-A5o"/>
-                            <constraint firstItem="Boa-fE-i6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="m0W-1F-DGr"/>
-                            <constraint firstItem="Sua-E9-V4F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="v6d-sd-hhT"/>
-                            <constraint firstItem="Boa-fE-i6J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="xvq-D4-bCw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sua-E9-V4F" secondAttribute="trailing" constant="50" id="ygZ-vW-tUw"/>
+                            <constraint firstItem="Boa-fE-i6J" firstAttribute="leading" secondItem="Sua-E9-V4F" secondAttribute="leading" id="6WK-db-lrs"/>
+                            <constraint firstItem="Boa-fE-i6J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="FCc-Rj-eBx"/>
+                            <constraint firstItem="Rpg-9n-PWA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XfE-5T-ojt"/>
+                            <constraint firstItem="Sua-E9-V4F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="208" id="anM-ea-8oM"/>
+                            <constraint firstItem="Rpg-9n-PWA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="g06-lQ-ZBw"/>
+                            <constraint firstItem="Boa-fE-i6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="gnn-sX-mzD"/>
+                            <constraint firstItem="Rpg-9n-PWA" firstAttribute="centerX" secondItem="Boa-fE-i6J" secondAttribute="centerX" id="oID-lV-nzp"/>
+                            <constraint firstItem="Rpg-9n-PWA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="ozd-7f-f5T"/>
+                            <constraint firstItem="Rpg-9n-PWA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rdc-QV-wVe"/>
+                            <constraint firstItem="Boa-fE-i6J" firstAttribute="trailing" secondItem="Sua-E9-V4F" secondAttribute="trailing" id="z77-FM-P1e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -50,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="375" height="812"/>
+        <image name="3bcd749992ee7f225f2ea5f913b586a8" width="564" height="797"/>
     </resources>
 </document>
