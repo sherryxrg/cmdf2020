@@ -39,7 +39,7 @@ class WalletViewController: UIViewController {
                 // programatically create a view
                 let uiView_card1=UIView(frame: CGRect(x: 18, y: 193, width: 374, height: 170))
                 let swapedCard1=UIImageView(frame: CGRect(x:-8, y: -9, width: 391, height: 190))
-                swapedCard1.image = UIImage(named: "m")
+                swapedCard1.image = UIImage(named: "card2")
                 swapedCard1.styleCards(containerView: uiView_card1, cornerRadius: 25)
                 
                  // Add UIView as a Subview
@@ -59,8 +59,8 @@ class WalletViewController: UIViewController {
                 phone1.textAlignment = NSTextAlignment.center
                 email1.textAlignment = NSTextAlignment.center
                 name1.text = card1Info["name1"]
-                name1.font = UIFont(name: "Snell Roundhand",
-                size: 31.0)
+                name1.font = UIFont(name: "Futura",
+                size: 29.0)
                 company1.text = card1Info["company1"]
                 position1.text = card1Info["position1"]
                 phone1.text = card1Info["phone1"]
@@ -71,10 +71,43 @@ class WalletViewController: UIViewController {
                 uiView_card1.addSubview(phone1)
                 uiView_card1.addSubview(email1)
                 
+            if (UserDefaults.standard.object(forKey: "card0") != nil) {
+                // --- load the cards
+                // programatically create a view
+                let uiView_card0=UIView(frame: CGRect(x: 19, y: 418, width: 374, height: 170))
+                let swapedCard0=UIImageView(frame: CGRect(x:-8, y: -9, width: 391, height: 190))
+                swapedCard0.image = UIImage(named: "card9")
+                swapedCard0.styleCards(containerView: uiView_card0, cornerRadius: 25)
                 
-                
-                
-//
+                 // Add UIView as a Subview
+                uiView_card0.addSubview(swapedCard0)
+                self.view.addSubview(uiView_card0)
+
+                // add label
+                var card0Info: [String:String] = UserDefaults.standard.object(forKey: "card0") as? [String:String] ?? [:]
+                let name0 = UILabel(frame: CGRect(x: 113, y: 24, width: 180, height: 40))
+                let company0 = UILabel(frame: CGRect(x: -8, y: 79, width: 183, height: 17))
+                let position0 = UILabel(frame: CGRect(x: 201, y: 79, width: 182, height: 17))
+                let phone0 = UILabel(frame: CGRect(x: -8, y: 114, width: 183, height: 17))
+                let email0 = UILabel(frame: CGRect(x: 201, y: 113, width: 182, height: 17))
+                name0.textAlignment = NSTextAlignment.center
+                company0.textAlignment = NSTextAlignment.center
+                position0.textAlignment = NSTextAlignment.center
+                phone0.textAlignment = NSTextAlignment.center
+                email0.textAlignment = NSTextAlignment.center
+                name0.text = card0Info["name0"]
+                name0.font = UIFont(name: "Futura",
+                size: 29.0)
+                company0.text = card0Info["company0"]
+                position0.text = card0Info["position0"]
+                phone0.text = card0Info["phone0"]
+                email0.text = card0Info["email0"]
+                uiView_card0.addSubview(name0)
+                uiView_card0.addSubview(company0)
+                uiView_card0.addSubview(position0)
+                uiView_card0.addSubview(phone0)
+                uiView_card0.addSubview(email0)
+            }
 //                for (name, path) in card1Info {
 //                    let label = UILabel(frame: CGRect(x: 30, y: yAxis, width: 300, height: 200))
 //                    label.textAlignment = NSTextAlignment.center

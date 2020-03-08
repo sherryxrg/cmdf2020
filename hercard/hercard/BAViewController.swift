@@ -29,9 +29,9 @@ class BAViewController: UIViewController {
     }
     
     @IBAction func swapCard(_ sender: Any) {
-        let infoCard1 = ["name0": nameCard.text, "company0":companyCard.text, "position0":positionCard.text, "phone0":phoneCard.text, "email0"
+        let infoCard0 = ["name0": nameCard.text, "company0":companyCard.text, "position0":positionCard.text, "phone0":phoneCard.text, "email0"
             :emailCard.text]
-        defaults.set(infoCard1, forKey: "card0")
+        defaults.set(infoCard0, forKey: "card0")
         
         
         UserDefaults.standard.set(nameCard.text, forKey: "name0")
