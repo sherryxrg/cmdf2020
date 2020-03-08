@@ -100,7 +100,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oD4-nx-HGg">
                                 <rect key="frame" x="20" y="288" width="374" height="425"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="RhP-v8-SWu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="RhP-v8-SWu">
                                         <rect key="frame" x="-12" y="-134" width="397" height="678"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="677.99999999999977" id="YQR-wl-LGu"/>
@@ -456,7 +456,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3bcd749992ee7f225f2ea5f913b586a8" translatesAutoresizingMaskIntoConstraints="NO" id="9CB-eX-ONW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000023"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HER *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qq-zP-gd3">
                                 <rect key="frame" x="50" y="194" width="314" height="77"/>
@@ -780,7 +780,7 @@ security</string>
                                 <rect key="frame" x="18" y="193" width="374" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="m" translatesAutoresizingMaskIntoConstraints="NO" id="tX7-ju-mCZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="card2" translatesAutoresizingMaskIntoConstraints="NO" id="tX7-ju-mCZ">
                                         <rect key="frame" x="-8" y="-9" width="391" height="190"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AI Architect" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-HO-XmZ">
@@ -812,7 +812,7 @@ security</string>
                                             <fragment content="Irene Hsieh">
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="31" name="SnellRoundhand"/>
+                                                    <font key="NSFont" size="29" name="Futura-Medium"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -850,7 +850,7 @@ security</string>
                                 <rect key="frame" x="19" y="478" width="374" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="il_fullxfull.1954598379_5ixg-1" translatesAutoresizingMaskIntoConstraints="NO" id="trq-WM-0SH">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="card11" translatesAutoresizingMaskIntoConstraints="NO" id="trq-WM-0SH">
                                         <rect key="frame" x="-8" y="-9" width="391" height="190"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Junior AI Architect" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Z7-jM-rOT">
@@ -882,7 +882,7 @@ security</string>
                                             <fragment content="Yuni Hur">
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="31" name="SnellRoundhand"/>
+                                                    <font key="NSFont" size="29" name="Futura-Medium"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1097,7 +1097,8 @@ security</string>
         <image name="3bcd749992ee7f225f2ea5f913b586a8" width="564" height="797"/>
         <image name="Screen Shot 2020-03-07 at 4.11.08 PM" width="870" height="547"/>
         <image name="Screen Shot 2020-03-08 at 3.00.14 AM" width="1110" height="1508"/>
-        <image name="bg" width="375" height="812"/>
+        <image name="card11" width="976" height="566"/>
+        <image name="card2" width="1472" height="972"/>
         <image name="card9" width="630" height="366"/>
         <image name="creditcard" catalog="system" width="64" height="44"/>
         <image name="house" catalog="system" width="64" height="54"/>
