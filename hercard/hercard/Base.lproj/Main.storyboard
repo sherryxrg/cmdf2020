@@ -245,13 +245,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yai-FA-k5a">
-                                <rect key="frame" x="20" y="219" width="374" height="170"/>
+                                <rect key="frame" x="20" y="219" width="374" height="219"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="il_fullxfull.1954598379_5ixg-1" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-WD-rGs">
                                         <rect key="frame" x="-8" y="-9" width="391" height="190"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1W-Sl-hEM">
-                                        <rect key="frame" x="-8" y="63.5" width="183" height="14"/>
+                                        <rect key="frame" x="-8" y="112.5" width="183" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="oF9-ZI-DZ4"/>
                                         </constraints>
@@ -259,7 +259,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lN-1L-Jca">
-                                        <rect key="frame" x="197" y="64.5" width="182" height="14"/>
+                                        <rect key="frame" x="197" y="113.5" width="182" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="182" id="5M9-ft-YaU"/>
                                         </constraints>
@@ -267,7 +267,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-9W-d7t">
-                                        <rect key="frame" x="-8" y="94.5" width="183" height="14"/>
+                                        <rect key="frame" x="-8" y="143.5" width="183" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="kwf-hv-9rw"/>
                                         </constraints>
@@ -275,12 +275,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DV-sR-ePH">
-                                        <rect key="frame" x="197" y="91.5" width="182" height="17"/>
+                                        <rect key="frame" x="197" y="140.5" width="182" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                        <rect key="frame" x="113" y="27" width="149" height="28"/>
+                                        <rect key="frame" x="112.5" y="27" width="149" height="77"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="149" id="umF-He-KEX"/>
                                         </constraints>
@@ -370,6 +370,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixJ-i3-ppo">
                                         <rect key="frame" x="-8" y="-9" width="391" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="8rJ-Kc-sve" kind="presentation" modalPresentationStyle="fullScreen" id="Dbw-dF-abm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -706,4 +709,7 @@ security</string>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dbw-dF-abm"/>
+    </inferredMetricsTieBreakers>
 </document>
