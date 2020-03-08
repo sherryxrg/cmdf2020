@@ -9,18 +9,24 @@
 import Foundation
 import UIKit
 
-class Card {
-    var name: String
-    var company: String
-    var position: String
-    var phone: String
-    var email: String
+class Card: UIViewController {
+    @IBOutlet var name: UITextField!
+    @IBOutlet var company: UITextField!
+    @IBOutlet var position: UITextField!
+    @IBOutlet var phone: UITextField!
+    @IBOutlet var email: UITextField!
     
-    init(name: String, company: String, position: String, phone: String, email: String){
-        self.name = name
-        self.company = company
-        self.position = position
-        self.phone = phone
-        self.email = email
+    var nameText = ""
+    
+    @IBAction func create_card(_ sender: UIButton) {
+        self.nameText = name.text!
+        performSegue(withIdentifier: "profile", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ProfileController
+        vc.finalName = self.nameText
+    }
+    
+    
 }
