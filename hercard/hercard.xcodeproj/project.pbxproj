@@ -15,6 +15,7 @@
 		640165DB2414498100FAAEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640165D92414498100FAAEF9 /* Main.storyboard */; };
 		640165DD2414498A00FAAEF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640165DC2414498A00FAAEF9 /* Assets.xcassets */; };
 		640165E02414498A00FAAEF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640165DE2414498A00FAAEF9 /* LaunchScreen.storyboard */; };
+		640166082415491700FAAEF9 /* BAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640166072415491700FAAEF9 /* BAViewController.swift */; };
 		AA34A3AA2414732700B05042 /* SearchVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34A3A92414732700B05042 /* SearchVCViewController.swift */; };
 		AAB6F571241523310005960E /* hercardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640165F52414498A00FAAEF9 /* hercardUITests.swift */; };
 		AAB6F572241523360005960E /* hercardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640165EA2414498A00FAAEF9 /* hercardTests.swift */; };
@@ -57,6 +58,7 @@
 		640165F12414498A00FAAEF9 /* hercardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hercardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		640165F52414498A00FAAEF9 /* hercardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hercardUITests.swift; sourceTree = "<group>"; };
 		640165F72414498A00FAAEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640166072415491700FAAEF9 /* BAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAViewController.swift; sourceTree = "<group>"; };
 		AA34A3A92414732700B05042 /* SearchVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCViewController.swift; sourceTree = "<group>"; };
 		AAE2863B2414910F00442CE1 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		AAE2863D2414D4DE00442CE1 /* AIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				AAE2863B2414910F00442CE1 /* ProfileController.swift */,
 				AAE2863D2414D4DE00442CE1 /* AIViewController.swift */,
 				AAE2863F2414F8A400442CE1 /* WalletViewController.swift */,
+				640166072415491700FAAEF9 /* BAViewController.swift */,
 			);
 			path = hercard;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				640165D82414498100FAAEF9 /* SecondViewController.swift in Sources */,
 				640165D62414498100FAAEF9 /* FirstViewController.swift in Sources */,
 				640165D22414498100FAAEF9 /* AppDelegate.swift in Sources */,
+				640166082415491700FAAEF9 /* BAViewController.swift in Sources */,
 				AAE2863E2414D4DE00442CE1 /* AIViewController.swift in Sources */,
 				33935F0D2414805100C7BFE4 /* card.swift in Sources */,
 				640165D42414498100FAAEF9 /* SceneDelegate.swift in Sources */,
