@@ -9,28 +9,28 @@
 import UIKit
 
 class ProfileController: UIViewController {
-
-    @IBOutlet var nameLabel: UILabel!
     
-    var finalName = ""
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var company: UILabel!
+    @IBOutlet var position: UILabel!
+    @IBOutlet var phone: UILabel!
+    @IBOutlet var email: UILabel!
+    @IBOutlet var uiView_card: UIView!
+    @IBOutlet var imageView_card: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = finalName
+        UserDefaults.standard.synchronize()
+        let strings = UserDefaults.standard.object(forKey: "myCard") as? [String:String]
+        nameLabel.text = strings?["name"]
+        company.text = strings?["company"]
+        position.text = strings?["position"]
+        phone.text = strings?["phone"]
+        email.text = strings?["email"]
+    self.imageView_card.styleCards(containerView: uiView_card, cornerRadius: 25)
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

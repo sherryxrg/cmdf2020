@@ -16,16 +16,25 @@ class Card: UIViewController {
     @IBOutlet var phone: UITextField!
     @IBOutlet var email: UITextField!
     
-    var nameText = ""
+    var nameText:String = "nameText"
+
     
     @IBAction func create_card(_ sender: UIButton) {
-        self.nameText = name.text!
-        performSegue(withIdentifier: "profile", sender: self)
+//        nameText = name.text!
+        UserDefaults.standard.set(self.nameText, forKey: "Name")
+        let dictionary = [
+            "name": name.text,
+            "company": company.text,
+            "position": position.text,
+            "phone": phone.text,
+            "email": email.text
+        ]
+        UserDefaults.standard.set(dictionary, forKey: "myCard")
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ProfileController
-        vc.finalName = self.nameText
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
     
     
