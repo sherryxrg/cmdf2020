@@ -690,7 +690,7 @@ security</string>
             </objects>
             <point key="canvasLocation" x="2230" y="1104"/>
         </scene>
-        <!--Item-->
+        <!--Wallet-->
         <scene sceneID="SGv-hN-0wT">
             <objects>
                 <viewController id="3bk-D0-Jpr" sceneMemberID="viewController">
@@ -709,7 +709,7 @@ security</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XDl-O4-sgi"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="YOb-pO-bWM"/>
+                    <tabBarItem key="tabBarItem" title="Wallet" image="creditcard" catalog="system" id="YOb-pO-bWM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyC-w1-4BK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -828,6 +828,7 @@ security</string>
     <resources>
         <image name="Screen Shot 2020-03-07 at 4.11.08 PM" width="870" height="547"/>
         <image name="bg" width="375" height="812"/>
+        <image name="creditcard" catalog="system" width="64" height="44"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="il_fullxfull.1954598379_5ixg" width="1147" height="660"/>
         <image name="il_fullxfull.1954598379_5ixg-1" width="1147" height="660"/>
