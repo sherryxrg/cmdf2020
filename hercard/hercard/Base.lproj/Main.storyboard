@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ut0-tf-iFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ut0-tf-iFN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
         </scene>
-        <!--Card-->
+        <!--View Controller-->
         <scene sceneID="PiB-9C-ExP">
             <objects>
-                <viewController id="Vfk-fj-rnb" customClass="Card" customModule="hercard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vfk-fj-rnb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GMa-wO-wCM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,9 +193,6 @@
                                 <rect key="frame" x="116" y="666" width="183" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Your Business Card"/>
-                                <connections>
-                                    <action selector="create_card:" destination="Vfk-fj-rnb" eventType="touchUpInside" id="L3Z-UZ-QMA"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -207,45 +204,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kpb-Tp-eue"/>
                     </view>
-                    <connections>
-                        <outlet property="company" destination="uOI-OD-9hi" id="1Ue-zh-l2E"/>
-                        <outlet property="email" destination="ea1-a5-BXM" id="I0b-ku-prU"/>
-                        <outlet property="name" destination="DVn-KR-mWT" id="8Xu-Kb-Dcm"/>
-                        <outlet property="phone" destination="6ry-Na-Jbh" id="PlN-Hl-OFX"/>
-                        <outlet property="position" destination="3Mp-iU-71s" id="Peq-Fw-cI6"/>
-                        <segue destination="Bhb-vU-Nc5" kind="presentation" identifier="Profile" id="fhI-dI-aNj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6to-2c-sov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="-819.64285714285711"/>
-        </scene>
-        <!--Profile Controller-->
-        <scene sceneID="l5J-Xf-yEJ">
-            <objects>
-                <viewController id="Bhb-vU-Nc5" customClass="ProfileController" customModule="hercard" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6c0-hu-i2C">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="671-ls-rFg">
-                                <rect key="frame" x="20" y="85" width="374" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="VZ0-Hc-tV1"/>
-                    </view>
-                    <connections>
-                        <outlet property="nameLabel" destination="671-ls-rFg" id="uM2-vQ-ceu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wrK-pz-jG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="747.82608695652175" y="-1035.2678571428571"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -415,6 +377,7 @@
                                 <color key="backgroundColor" red="0.9134544403" green="0.9134544403" blue="0.9134544403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="VuG-rN-G2W"/>
+                                    <constraint firstAttribute="width" constant="165" id="yng-RG-coK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal">
@@ -577,6 +540,7 @@ security</string>
         <image name="bg" width="375" height="812"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="il_fullxfull.1954598379_5ixg" width="1147" height="660"/>
+        <image name="first" width="30" height="30"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="second" width="30" height="30"/>
     </resources>
