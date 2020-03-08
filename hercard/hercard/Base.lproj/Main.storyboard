@@ -227,7 +227,7 @@
             </objects>
             <point key="canvasLocation" x="99" y="0.0"/>
         </scene>
-        <!--Second-->
+        <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ProfileController" customModule="hercard" customModuleProvider="target" sceneMemberID="viewController">
@@ -331,7 +331,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="company" destination="i1W-Sl-hEM" id="XrL-DO-xQA"/>
                         <outlet property="email" destination="5DV-sR-ePH" id="Lpv-Vk-Ga7"/>
@@ -833,6 +833,6 @@ security</string>
         <image name="il_fullxfull.1954598379_5ixg-1" width="1147" height="660"/>
         <image name="m" width="1061" height="688"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="second" width="30" height="30"/>
+        <image name="person" catalog="system" width="64" height="58"/>
     </resources>
 </document>
