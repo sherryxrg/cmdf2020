@@ -16,6 +16,8 @@
 		640165E02414498A00FAAEF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640165DE2414498A00FAAEF9 /* LaunchScreen.storyboard */; };
 		640165EB2414498A00FAAEF9 /* hercardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640165EA2414498A00FAAEF9 /* hercardTests.swift */; };
 		640165F62414498A00FAAEF9 /* hercardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640165F52414498A00FAAEF9 /* hercardUITests.swift */; };
+		AA34A3A82414722500B05042 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34A3A72414722500B05042 /* CollectionViewCell.swift */; };
+		AA34A3AA2414732700B05042 /* SearchVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34A3A92414732700B05042 /* SearchVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		640165F12414498A00FAAEF9 /* hercardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hercardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		640165F52414498A00FAAEF9 /* hercardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hercardUITests.swift; sourceTree = "<group>"; };
 		640165F72414498A00FAAEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA34A3A72414722500B05042 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AA34A3A92414732700B05042 /* SearchVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				640165DC2414498A00FAAEF9 /* Assets.xcassets */,
 				640165DE2414498A00FAAEF9 /* LaunchScreen.storyboard */,
 				640165E12414498A00FAAEF9 /* Info.plist */,
+				AA34A3A72414722500B05042 /* CollectionViewCell.swift */,
+				AA34A3A92414732700B05042 /* SearchVCViewController.swift */,
 			);
 			path = hercard;
 			sourceTree = "<group>";
@@ -262,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA34A3A82414722500B05042 /* CollectionViewCell.swift in Sources */,
 				640165D82414498100FAAEF9 /* SecondViewController.swift in Sources */,
 				640165D62414498100FAAEF9 /* FirstViewController.swift in Sources */,
 				640165D22414498100FAAEF9 /* AppDelegate.swift in Sources */,
 				640165D42414498100FAAEF9 /* SceneDelegate.swift in Sources */,
+				AA34A3AA2414732700B05042 /* SearchVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
