@@ -32,7 +32,7 @@ class SearchVCViewController: UIViewController {
 //    func collectionView(collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
 //        print(indexPath.item)
 //    }
-//
+
 
     /*
     // MARK: - Navigation

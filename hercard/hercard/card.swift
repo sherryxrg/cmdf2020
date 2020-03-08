@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class Card: UIViewController {
+
     @IBOutlet var name: UITextField!
     @IBOutlet var company: UITextField!
     @IBOutlet var position: UITextField!
@@ -20,7 +21,7 @@ class Card: UIViewController {
 
     
     @IBAction func create_card(_ sender: UIButton) {
-//        nameText = name.text!
+        nameText = name.text!
         UserDefaults.standard.set(self.nameText, forKey: "Name")
         let dictionary = [
             "name": name.text,
@@ -31,7 +32,7 @@ class Card: UIViewController {
         ]
         UserDefaults.standard.set(dictionary, forKey: "myCard")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
